@@ -24,10 +24,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String nome;
-
     @NotBlank(message = "O nome de usuário é obrigatório")
-    private String nomeUsuario;
+    private String nome;
 
     @NotBlank(message = "o email é obrigatorio")
     @Email(message="Email deve ser validado")
@@ -44,6 +42,6 @@ public class User {
     private LocalDateTime updatedAt;
 
     @NotBlank(message = "senha é obrigatorio")
-    private String password;
+    private String senha;
 
 }
