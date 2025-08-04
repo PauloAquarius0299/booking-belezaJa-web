@@ -1,6 +1,6 @@
-package com.paulotech.reserva_service.dto;
+package com.paulotech.pagamento_service.payload.dto;
 
-import com.paulotech.reserva_service.domain.BookingStatus;
+import com.paulotech.pagamento_service.domain.BookingStatus;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -14,6 +14,6 @@ public class BookingDto {
     private LocalDateTime inicio;
     private LocalDateTime fim;
     private Set<Long> servicoId;
-    private int totalPreco;
+    private Long totalPreco;
 
 }
